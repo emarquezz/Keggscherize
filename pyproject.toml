@@ -19,10 +19,12 @@ classifiers = [
 Changelog = "https://github.com/emarquezz/Keggscherize/releases"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">=3.9,<4.0" 
 click = ">=8.0.1"
+biopython = "^1.85"
+cobra = "^0.29.1"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 Pygments = ">=2.10.0"
 bandit = ">=1.7.4"
 black = ">=21.10b0"
